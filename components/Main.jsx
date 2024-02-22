@@ -16,7 +16,7 @@ const Main = () => {
 
                     {/* Для крупного текста используйте классы размера текста, подобранные под ваш дизайн */}
                     <h1 className='text-6xl text-[#B1BDC9] text-center sm:hidden'>
-                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2]">MYKYTA</span>
+                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2]">MYKYTA </span>
                     </h1>
                     {/* Текст для экранов начиная с sm и выше */}
                     <h1 className='hidden sm:block lg:text-9xl text-[#B1BDC9] text-center'>
