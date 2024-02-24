@@ -1,14 +1,16 @@
-import React from 'react'
+'use client'
+import React from 'react';
 // import '@styles/Main.css';
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill, BsHouseAdd } from 'react-icons/bs'
-// import {morion as m} from 'framer-motion'; 
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { BsFillPersonLinesFill, BsHouseAdd } from 'react-icons/bs';
+import { motion as m } from "framer-motion"
+
 
 const Main = () => {
     return (
-        <div className="w-full h-screen flex justify-center items-center">
+        <m.div initial={{opacity: 0}} animate={{opacity: 1}} className="w-full h-screen flex justify-center items-center">
             <div className="flex flex-col md:flex-row justify-center items-center text-center max-w-[1100px] mx-auto">
                 <div>
                     {/* Текстовый контент */}
@@ -16,11 +18,11 @@ const Main = () => {
 
                     {/* Для крупного текста используйте классы размера текста, подобранные под ваш дизайн */}
                     <h1 className='text-6xl text-[#B1BDC9] text-center sm:hidden'>
-                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2]">MYKYTA </span>
+                        HI THERE, I'M <span className="text-[#d2d2d2]">MYKYTA</span>
                     </h1>
                     {/* Текст для экранов начиная с sm и выше */}
                     <h1 className='hidden sm:block lg:text-9xl text-[#B1BDC9] text-center'>
-                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2] whitespace-nowrap">MYKYTA MAKHORIN</span>.
+                        HI THERE, I'M <span className="text-[#d2d2d2] whitespace-nowrap">MYKYTA MAKHORIN</span>.
                     </h1>
 
                     {/* Для меньшего текста аналогично */}
@@ -29,11 +31,8 @@ const Main = () => {
                         and a <span className="text-[#B7B7B7]">Junior</span> programmer.
                     </h2>
 
-
                     <div className="flex items-center justify-between max-w-[630px] m-auto py-4">
                         <div className='flex items-center justify-between my-4 w-full sm:w-[100%]'>
-
-
                             <a href="https://www.linkedin.com/in/mykyta-makhorin-3991a8204/" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className='rounded-full shadow-lg shadow-gray-400 pt-6 cursor-pointer hover:scale-105 ease-in duration-300 w-12 h-12 flex items-center justify-center'
@@ -50,7 +49,6 @@ const Main = () => {
                                 </div>
                             </a>
 
-
                             <a href="mailto:nikitos2159@gmail.com" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className='rounded-full shadow-lg shadow-gray-400 pt-6 cursor-pointer hover:scale-105 ease-in duration-300 w-12 h-12 flex items-center justify-center'
@@ -59,7 +57,6 @@ const Main = () => {
                                 </div>
                             </a>
 
-
                             <a href="https://web-portfolio-pearl-seven.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 <div
                                     className='rounded-full shadow-lg shadow-gray-400 pt-6 cursor-pointer hover:scale-105 ease-in duration-300 w-12 h-12 flex items-center justify-center'
@@ -67,21 +64,12 @@ const Main = () => {
                                 > <BsFillPersonLinesFill style={{ position: 'relative', top: '-10px', left: '0px' }} />
                                 </div>
                             </a>
-
                         </div>
-
-
                     </div>
-
                 </div>
-
             </div>
-        
-        </div>
+        </m.div>
+    );
+};
 
-
-
-    )
-}
-
-export default Main
+export default Main;
