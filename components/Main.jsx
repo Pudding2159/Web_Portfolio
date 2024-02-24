@@ -1,10 +1,10 @@
 import React from 'react'
-import '@styles/Main.css';
+// import '@styles/Main.css';
 
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { BsFillPersonLinesFill, BsHouseAdd } from 'react-icons/bs'
-
+// import {morion as m} from 'framer-motion'; 
 
 const Main = () => {
     return (
@@ -20,8 +20,9 @@ const Main = () => {
                     </h1>
                     {/* Текст для экранов начиная с sm и выше */}
                     <h1 className='hidden sm:block lg:text-9xl text-[#B1BDC9] text-center'>
-                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2]">MYKYTA MAKHORIN</span>.
+                        HI&nbsp;THERE, I'M <span className="text-[#d2d2d2] whitespace-nowrap">MYKYTA MAKHORIN</span>.
                     </h1>
+
                     {/* Для меньшего текста аналогично */}
                     <h2 className='xs:text-2xl lg:text-4xl text-[#B1BDC9] text-center'>
                         Student of <span className="text-[#B7B7B7]">The Technical University of Košice</span>
@@ -75,6 +76,7 @@ const Main = () => {
                 </div>
 
             </div>
+        
         </div>
 
 

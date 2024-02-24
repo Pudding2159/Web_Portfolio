@@ -6,12 +6,7 @@
     font-family: 'LilGrotesk Regular';
     src: url('/fonts/LilGrotesk-Regular.otf') format('opentype');
 }
-body {
-    font-family: 'LilGrotesk Regular', sans-serif;
-    font-size: 20px;  /* размер шрифта для body */
-}
 
-h1, h2, h3 {
-    font-family: 'LilGrotesk Bold', sans-serif;
-    font-size: 40px;  /* размер шрифта для заголовков */
+.font-face-gm {
+    font-family: "LilGrotesk Bold";
 }

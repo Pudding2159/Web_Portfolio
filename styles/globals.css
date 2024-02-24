@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
@@ -208,4 +210,11 @@ html, body {
   letter-spacing: -0.05em; /* Отрицательное значение для уменьшения пространства между буквами */
 }
 
+@font-face {
+  font-family: "Myfont";
+  src: url("/public/fonts/behance-642c26b725e38.ttf");
+ }
 
+.font-face-gm {
+  font-family: "Myfont";
+}
