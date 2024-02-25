@@ -1,27 +1,31 @@
 'use client'
 import React from 'react';
-// import '@styles/Main.css';
-
+import '@styles/Main.css';
+import Scroller from 'components/Scroller'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill, BsHouseAdd } from 'react-icons/bs';
-import { motion as m } from "framer-motion"
+import { easeOut, motion as m } from "framer-motion"
 
 
 const Main = () => {
     return (
-        <m.div initial={{opacity: 0}} animate={{opacity: 1}} className="w-full h-screen flex justify-center items-center">
+        <m.div 
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        className="w-full h-screen flex justify-center items-center" 
+        transition={{duration: 0.7, ease: "easeOut"}}>
             <div className="flex flex-col md:flex-row justify-center items-center text-center max-w-[1100px] mx-auto">
                 <div>
                     {/* Текстовый контент */}
                     <p className='uppercase text-sm tracking-widest text-[#B7B7B7] text-center'>Let's work together</p>
 
                     {/* Для крупного текста используйте классы размера текста, подобранные под ваш дизайн */}
-                    <h1 className='text-6xl text-[#B1BDC9] text-center sm:hidden'>
+                    <h1 className='text-6xl text-[#B1BDC9] text-center sm:hidden font-face-my69'>
                         HI THERE, I'M <span className="text-[#d2d2d2]">MYKYTA</span>
                     </h1>
                     {/* Текст для экранов начиная с sm и выше */}
-                    <h1 className='hidden sm:block lg:text-9xl text-[#B1BDC9] text-center'>
+                    <h1 className='hidden sm:block lg:text-9xl text-[#B1BDC9] text-center font-face-my69'>
                         HI THERE, I'M <span className="text-[#d2d2d2] whitespace-nowrap">MYKYTA MAKHORIN</span>.
                     </h1>
 
@@ -30,7 +34,7 @@ const Main = () => {
                         Student of <span className="text-[#B7B7B7]">The Technical University of Košice</span>
                         and a <span className="text-[#B7B7B7]">Junior</span> programmer.
                     </h2>
-
+            
                     <div className="flex items-center justify-between max-w-[630px] m-auto py-4">
                         <div className='flex items-center justify-between my-4 w-full sm:w-[100%]'>
                             <a href="https://www.linkedin.com/in/mykyta-makhorin-3991a8204/" target="_blank" rel="noopener noreferrer">
@@ -66,10 +70,18 @@ const Main = () => {
                             </a>
                         </div>
                     </div>
-                </div>
+                </div>    
             </div>
+
+
+        <Scroller/>
+        <script>
+            console.log(document.visibilityState);
+        </script>
         </m.div>
-    );
+
+        
+);
 };
 
 export default Main;

@@ -6,6 +6,7 @@ import About from "components/About"
 import Skills from 'components/Skills';
 import Projects from 'components/Projects';
 import Contact from 'components/Contact';
+// import Scroller from 'components/Scroller'
 
 export const metadata = {
     title: "MY Profile",
@@ -16,10 +17,10 @@ const RootLayout = ({ children }) => {
     return (
         <html lang='en'>
             <body>
-                {/* <NavbarM />  */}
+                <NavbarM /> 
         
                 
-                
+
                 <main className='app'>
                     <Main /> 
                     {/* <About/> */}
@@ -29,7 +30,7 @@ const RootLayout = ({ children }) => {
                     {/* <Nav/> */}
                     {/* {children} */}
                 </main>
-                
+                {/* <Scroller/> */}
                 
 
             </body>
