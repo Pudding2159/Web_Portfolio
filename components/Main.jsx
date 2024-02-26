@@ -18,7 +18,7 @@ const Main = () => {
             <div className="flex flex-col md:flex-row justify-center items-center text-center max-w-[1100px] mx-auto">
                 <div>
                     {/* Текстовый контент */}
-                    <p className='uppercase text-sm tracking-widest text-[#B7B7B7] text-center'>Let's work together</p>
+                    <p className='uppercase text-sm tracking-widest text-[#B7B7B7] text-center p-3'>Let's work together</p>
 
                     {/* Для крупного текста используйте классы размера текста, подобранные под ваш дизайн */}
                     <h1 className='text-6xl text-[#B1BDC9] text-center sm:hidden font-face-my69'>
@@ -30,8 +30,8 @@ const Main = () => {
                     </h1>
 
                     {/* Для меньшего текста аналогично */}
-                    <h2 className='xs:text-2xl lg:text-4xl text-[#B1BDC9] text-center'>
-                        Student of <span className="text-[#B7B7B7]">The Technical University of Košice</span>
+                    <h2 className='xs:text-2xl lg:text-4xl text-[#B1BDC9] text-center font-extralight'>
+                        Student of <span className="text-[#B7B7B7]">The Technical University of Košice </span>
                         and a <span className="text-[#B7B7B7]">Junior</span> programmer.
                     </h2>
             

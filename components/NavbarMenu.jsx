@@ -1,5 +1,4 @@
 "use client"
-
 import Image from 'next/image';
 import React, {useState} from 'react';
 import Link from 'next/link';
@@ -15,37 +14,32 @@ const NavbarM = () => {
     }
 
     return (
-        <div className='fixed w-full h-30 shadow-xl z-[100]'>
+        <div className='fixed w-full h-20 shadow-xl z-[560]'>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Image
+                {/* <Image
                     src="/assets/images/logo2.png"
                     alt='/'
                     width={150}
                     height={150}
-                />
+                /> */}
 
-                <div className="py-5 flex-col">
-                    <ul className='hidden md:flex' >
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                Home
-                            </li>
-                        </Link>
-                        <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                Skills
-                            </li>
-                        </Link><Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                Contect
-                            </li>
-                        </Link><Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b'>
-                                Project
-                            </li>
-                        </Link>
-                    </ul>
-                    <div className="absolute top-6 right-0 m-10">
+                    <div className="flex justify-center items-center w-full">
+  <ul className="hidden md:flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
+    <li className="px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-2 text-sm uppercase hover:border-b text-center">
+      <Link href="/">Home</Link>
+    </li>
+    <li className="px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-2 text-sm uppercase hover:border-b text-center">
+      <Link href="/skills">Skills</Link>
+    </li>
+    <li className="px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-2 text-sm uppercase hover:border-b text-center">
+      <Link href="/contact">Contact</Link>
+    </li>
+    <li className="px-2 sm:px-4 md:px-6 lg:px-8 xl:px-10 py-2 text-sm uppercase hover:border-b text-center">
+      <Link href="/projects">Projects</Link>
+    </li>
+  </ul>
+
+                    <div className="absolute top-0 right-0 m-8">
                         <div onClick = {handleNav} >
                             <AiOutlineMenu size={25} />
                         </div>
@@ -54,9 +48,9 @@ const NavbarM = () => {
             </div>
 
 
-            <div className= {nav ? 'fixed left-0 top-0 w-full bg-black/70' : ''} >
+            <div className= {nav ? 'fixed left-0 top-0 w-full bg-black' : ''} >
                 <div className= { nav 
-                ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#040a0f] p-10 ease-in duration-500' 
+                ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#f9f9fa] p-10 ease-in duration-500' 
                 : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
                 } >
 
