@@ -31,21 +31,16 @@ const Scroller = ({ speed = 'fast' }) => {
   return (
     <div className={`scroller ${speed}`} ref={scrollerRef}>
       <ul className="tag-list scroller__inner">
-        <li>HTML Templates</li>
-        <li>CSS Login Forms</li>
-        <li>JavaScript</li>
-        <li>Single Page Applications</li>
-        <li>React Components</li>
-        <li>HTML Templates</li>
-        <li>CSS Login Forms</li>
-        <li>JavaScript</li>
-        <li>Single Page Applications</li>
-        <li>React Components</li>
-        <li>HTML Templates</li>
-        <li>CSS Login Forms</li>
-        <li>JavaScript</li>
-        <li>Single Page Applications</li>
-        <li>React Components</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>HTML Templates</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>CSS Login Forms</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>JavaScript</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>Single Page Applications</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>React Components</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>HTML Templates</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>CSS Login Forms</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>JavaScript</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>Single Page Applications</li>
+        <li className="font-face-my69" style={{ color: '#B1BDC9' }}>React Components</li>
         {/* Добавьте сюда другие элементы списка, если необходимо */}
       </ul>
     </div>

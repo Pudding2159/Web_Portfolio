@@ -1,22 +1,26 @@
 'use client'
+import '@styles/globals.css';
+
 import React from 'react';
 import '@styles/Main.css';
 import '@styles/light_style.css';
-
 import Scroller from 'components/Scroller'
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill, BsHouseAdd } from 'react-icons/bs';
 import { easeOut, motion as m } from "framer-motion"
+import NavbarM from '@components/NavbarMenu';
 
-const Main = () => {
+function Main() {
     return (
-
         <m.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             className="w-full h-screen flex justify-center items-center"
             transition={{ duration: 0.1, ease: "easeOut" }}>
+            <div className = "navbar-container">
+                <NavbarM/>
+            </div>
             <div className="flex flex-col md:flex-row justify-center items-center text-center max-w-[1100px] mx-auto">
                 <div>
                     {/* Текстовый контент */}

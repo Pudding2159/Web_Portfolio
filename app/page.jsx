@@ -7,8 +7,8 @@ import Link from 'next/link';
 
 
 
-const Home = () => {
+const Homes = () => {
     
 };
 
-export default Home;
+export default Homes;
