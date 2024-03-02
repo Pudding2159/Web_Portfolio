@@ -5,7 +5,7 @@ import NavbarM from 'components/NavbarMenu';
 import About from "components/About"
 import Skills from 'components/Skills';
 import Projects from 'components/Projects';
-import Contact from 'components/Contact';
+// import Contact from 'components/Contact';
 // import Scroller from 'components/Scroller'
 // import MyApps from '@components/_opp';
 import Main from '@components/Main';

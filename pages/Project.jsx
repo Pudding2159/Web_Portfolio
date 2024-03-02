@@ -16,16 +16,16 @@ import Unity from 'public/assets/images/Unity.gif'
 
 function Main() {
     return (
-        <>
+        <div className = "flex flex-col text-center mt-80">
             <m.div
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="w-full h-screen flex text-left"
+                className="flex flex-row sm:mt-40 md:mt-80"
                 transition={{ duration: 0.1, ease: "easeOut" }}>
                 <div className="navbar-container">
                     <NavbarM />
                 </div>
-                <div className="flex flex-col md:flex-row justify-start text-left w-full mx-auto xs:pt-32 md:pt-40  md:mr-96">
+                <div className="flex md:flex-row justify-start text-left w-full mx-auto">
                     <div>
                         {/* Текстовый контент */}
 
@@ -46,10 +46,10 @@ function Main() {
 
             </m.div>
 
-
+            
             {/* Project element */}
 
-            <div className="w-full  min-height: 100vh">
+            <div className="w-full flex flex-col items-center mt-8">
 
                 <ProjectItems
                     title_1='Drone-Face-Tracking-and-Photo-Classification-with-Tello'
@@ -74,7 +74,7 @@ function Main() {
                 />
 
             </div>
-        </>
+        </div>
     );
 };
 

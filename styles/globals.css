@@ -189,7 +189,8 @@ html, body {
   background-size: cover, cover, 100% 100%;  /* теперь у нас три слоя фона, каждый из которых масштабируется соответственно */
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, center, center;
-  background-attachment: scroll, scroll, scroll;
+  /* background-attachment: scroll, scroll, scroll; */
+  background-attachment: fixed, fixed, fixed;
 }
 @media (max-width: 300px) {
   html, body {
