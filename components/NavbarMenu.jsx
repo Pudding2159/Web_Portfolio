@@ -18,6 +18,7 @@ const NavbarM = () => {
     }
 
     return (
+        <div className = "w-full fixed top-0 left-0  " >
         <m.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -153,7 +154,7 @@ const NavbarM = () => {
                 </div >
             </div>
         </m.div>
-
+        </div>
     );
 };
 

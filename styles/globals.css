@@ -219,3 +219,16 @@ html, body {
 .font-face-gm{
   font-family: "LatoLight";
 }
+
+.main-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Убедитесь, что Main находится поверх других элементов */
+}
+
+.header {
+  z-index: 9999;
+  position: relative; /* z-index работает только для элементов с position отличным от static */
+}

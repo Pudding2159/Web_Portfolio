@@ -11,7 +11,7 @@ import { easeOut, motion as m } from "framer-motion"
 
 const Main = () => {
     return (
-
+        <div className = "flex flex-col" >
         <m.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
@@ -83,7 +83,7 @@ const Main = () => {
             </script>
         </m.div>
 
-
+        </div>
     );
 };
 
